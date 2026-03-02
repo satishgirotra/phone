@@ -1,1 +1,38 @@
-<a href="tel:+1-555-555-5555">Call Us</a>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <input id="text" type="text"><br>
+        <button id="seven" type="button" onclick=writeNumbers(this)>7</button>
+        <button id="eight" type="button" onclick=writeNumbers(this)>8</button>
+        <button id="nine" type="button" onclick=writeNumbers(this)>9</button>
+        <br>
+        <button id="four" type="button" onclick=writeNumbers(this)>4</button>
+        <button id="five" type="button" onclick=writeNumbers(this)>5</button>
+        <button id="six" type="button" onclick=writeNumbers(this)>6</button>
+        <br>
+        <button id="one" type="button" onclick=writeNumbers(this)>1</button>
+        <button id="two" type="button" onclick=writeNumbers(this)>2</button>
+        <button id="three" type="button" onclick=writeNumbers(this)>3</button>
+        <br>
+        <button id="cancel" type="button" onclick=c()>C</button>
+        <button id="zero" type="button" onclick=writeNumbers(this)>0</button>
+        <button id="equals" type="button" onclick=writeNumbers(this)>=</button>
+        <br>
+        <script>
+            function writeNumbers(el) {
+                var txt = document.getElementById("text");
+                var number = el.innerHTML;
+                txt.value = txt.value + number;
+                
+            }
+            function c() {
+                var txt = document.getElementById("text");
+                txt.value = "";
+            }
+        </script>
+
+      <a href="tel:+1-555-555-5555">Call Us</a>
+    </body>
+    </html>
