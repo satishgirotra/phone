@@ -7,8 +7,6 @@
 <title>Phone</title>
 <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-
 
 <style>
 body {
@@ -287,6 +285,24 @@ body {
 
 
 <script>
+
+
+document.addEventListener('gesturestart', function(e) {
+    e.preventDefault();
+    document.body.style.zoom = 0.99;
+});
+
+document.addEventListener('gesturechange', function(e) {
+    e.preventDefault();
+    document.body.style.zoom = 0.99;
+});
+
+document.addEventListener('gestureend', function(e) {
+    e.preventDefault();
+    document.body.style.zoom = 0.99;
+});
+
+
 function writeNumbers(el) {
 var txt = document.getElementById("text");
 var number = el.innerHTML;
