@@ -166,16 +166,31 @@ txt.value = txt.value + number;
 }
 
 function calling() {
+
+var REALPHONE = "YES";
 var txt = document.getElementById("text");
 var call = document.getElementById("calling");
+
+
 if (txt.value !== "") {
+
+if (REALPHONE == "YES") {
+
+window.location.href = "tel:" + txt;
+
+} else {
+
 document.getElementById("calling-icon").src="call-end.png";
 document.getElementById("calling-button").style.backgroundColor = "red";
 call.value = "Call Started";
 audio.play();
 document.getElementById("calling-button").onclick = refreshpage;
 setTimeout(refreshpage,107000);
-}              
+
+}
+
+}
+
 }
 
 function refreshpage() {
