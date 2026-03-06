@@ -20,6 +20,7 @@ body {
 #container {
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
 
@@ -107,7 +108,11 @@ justify-content: center;
 <br>
 
 <div id="container">
+<button style="visibility:hidden">Clear</button>
+<button style="visibility:hidden; width:1px">CLEAR</button>
 <button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="calling();"><img id="calling-icon" width="80" height="80" src="./call-start.png"></button>
+<button style="visibility:hidden; width:1px">CLEAR</button>
+<button style="background-color: transparent; border: none;" onclick = clearInput()>Clear</button>
 </div>
 
 
@@ -208,6 +213,12 @@ setTimeout(refreshpage,107000);
 function refreshpage() {
     window.location.reload();
 }
+
+
+function clearInput() {
+if (document.getElementById("calling").value == ""){
+window.location.reload();
+}}
 
 
 </script>
