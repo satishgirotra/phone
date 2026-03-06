@@ -166,7 +166,7 @@ document.addEventListener('gestureend', function(e) {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // either set to YES or NO
-var REALPHONE = "NO";
+var whitelistAllNumbers = "NO";
 
 var keypadWhitelist = ['911' , '3018064071'];
 
@@ -191,7 +191,7 @@ var call = document.getElementById("calling");
 
 if (txt.value !== "") {
 
-if ( REALPHONE == "YES" || keypadWhitelist.includes(txt.value) ) {
+if ( whitelistAllNumbers == "YES" || keypadWhitelist.includes(txt.value) ) {
 
 window.location.href = "tel:" + txt.value;
 
