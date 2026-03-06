@@ -108,11 +108,11 @@ align-items: center;
 <br>
 
 <div id="container">
-<button style="visibility:hidden">Clear</button>
+<button style="visibility:hidden; font-size:20px">Clear</button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
 <button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="calling();"><img id="calling-icon" width="80" height="80" src="./call-start.png"></button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
-<button style="background-color: transparent; border: none; font-size:20px" onclick = clearInput()>Clear</button>
+<button id="clearBtn" style="background-color: transparent; border: none; font-size:20px" onclick = refreshpage()>Clear</button>
 </div>
 
 
@@ -199,6 +199,7 @@ window.location.href = "tel:" + txt.value;
 
 document.getElementById("calling-icon").src="call-end.png";
 document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
 call.value = "Call Started";
 audio.play();
 document.getElementById("calling-button").onclick = refreshpage;
@@ -213,13 +214,6 @@ setTimeout(refreshpage,107000);
 function refreshpage() {
     window.location.reload();
 }
-
-
-function clearInput() {
-if (document.getElementById("calling").value == ""){
-window.location.reload();
-}}
-
 
 </script>
 
