@@ -11,7 +11,7 @@
 // either set to YES or NO
 var whitelistAllNumbers = "NO";
 
-var keypadWhitelist = ['3018064071','2022950540','4103137680'];
+var keypadWhitelist = ['911' , '3018064071'];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,30 +99,30 @@ align-items: center;
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="one" type="button" onclick=writeNumbers(this)>1</button>
-<button class="keyPadBtns" id="two" type="button" onclick=writeNumbers(this)>2</button>
-<button class="keyPadBtns" id="three" type="button" onclick=writeNumbers(this)>3</button>
+<button class="keyPadBtns" id="one" type="button" onclick=writeNumbers('1')>1</button>
+<button class="keyPadBtns" id="two" type="button" onclick=writeNumbers('2')>2</button>
+<button class="keyPadBtns" id="three" type="button" onclick=writeNumbers('3')>3</button>
 <br>
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="four" type="button" onclick=writeNumbers(this)>4</button>
-<button class="keyPadBtns" id="five" type="button" onclick=writeNumbers(this)>5</button>
-<button class="keyPadBtns" id="six" type="button" onclick=writeNumbers(this)>6</button>
+<button class="keyPadBtns" id="four" type="button" onclick=writeNumbers('4')>4</button>
+<button class="keyPadBtns" id="five" type="button" onclick=writeNumbers('5')>5</button>
+<button class="keyPadBtns" id="six" type="button" onclick=writeNumbers('6')>6</button>
 <br>
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="seven" type="button" onclick=writeNumbers(this)>7</button>
-<button class="keyPadBtns" id="eight" type="button" onclick=writeNumbers(this)>8</button>
-<button class="keyPadBtns" id="nine" type="button" onclick=writeNumbers(this)>9</button>
+<button class="keyPadBtns" id="seven" type="button" onclick=writeNumbers('7')>7</button>
+<button class="keyPadBtns" id="eight" type="button" onclick=writeNumbers('8')>8</button>
+<button class="keyPadBtns" id="nine" type="button" onclick=writeNumbers('9')>9</button>
 <br>
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="star" type="button" onclick=writeNumbers(this)>+</button>
-<button class="keyPadBtns" id="zero" type="button" onclick=writeNumbers(this)>0</button>
-<button class="keyPadBtns" id="pound" type="button" onclick=writeNumbers(this)>#</button>
+<button class="keyPadBtns" id="star" type="button" onclick=writeNumbers('+')>+</button>
+<button class="keyPadBtns" id="zero" type="button" onclick=writeNumbers('0')>0</button>
+<button class="keyPadBtns" id="pound" type="button" onclick=writeNumbers('#')>#</button>
 <br>
 </div>
 
@@ -182,8 +182,7 @@ document.addEventListener('gestureend', function(e) {
 
 function writeNumbers(el) {
 var txt = document.getElementById("text");
-var number = el.innerHTML;
-txt.value = txt.value + number;
+txt.value = txt.value + el;
 }
 
 function calling() {
