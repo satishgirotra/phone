@@ -11,7 +11,7 @@
 // either set to YES or NO
 var whitelistAllNumbers = "NO";
 
-var keypadWhitelist = ['911' , '3018064071'];
+var keypadWhitelist = ['3018064071' , '4103137680' , '+12404613608' , '3014451040' , '3014045258' , '3014959777' , '7322599418' , '7324040642' , '7325937053' , '918046069562' , '+447940050044' , '4106089060' , '7057921510' , '+919878375376' , '4435830880' , '+61412546803' , '4432768840' , '8002662278' , '7742533451' , '5712633947' , '7743657575' , '7742531295' , '3018091552' , '+919811217112' , '+14107684700' , '4435398720' , '011911126018873' , '011918826655325' , '4105319579' , '4438121630' , '0119111204374707' , '+919811287253' , '3013842133' , '4109643611' , '3092531405' , '4105507871' , '011919910420170' , '011919310425550' , '011919811637151' , '+911244044059' , '4107159900' , '4435730942' , '2408995482' , '4437558990' , '5084097856' , '+919814711736' , '+919871825853' , '4437184067' , '8049685700' , '4104614266' , '76200' , '+919810003511' , '0119999026023' , '+919810647304' , '4436189193' , '4434361600' , '+17346526107' , '3017288056' , '3014045258' , '5088781498' , '7347316107' , '7346528142' , '+12812076449' , '+18326930948' , '2407235725' , '+14438785431' , '3013103795' , '+14108120314' , '4107074135' , '5086156739' , '2403372022' , '4109601435' , '4109352786' , '+14104486400' , '+12023297774' , '4432552675' , '9739444482' , '4102909990' , '7323518588' , '7325700861' , '4435455464'];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -77,6 +77,15 @@ align-items: center;
     font-size:40px;
 }
 
+.keyPadLetters {
+    font-size:15px;
+}
+
+.btnSize{
+    height:70px;
+    width:70px;
+}
+
 </style>
 
 
@@ -91,38 +100,38 @@ align-items: center;
 
 
 <div id="container">
-<input disabled style="background-color: transparent; text-align: center; font-size:50px; border:none" id="calling" type="text"> <br>
+<input disabled style="background-color: transparent; text-align: center; font-size:30px; border:none" id="calling" type="text"> <br>
 </div>
 
 <div id="container">
-<input disabled style="background-color: transparent; text-align: center; font-size:50px; border:none" id="text" type="text"> <br>
+<input disabled style="background-color: transparent; text-align: center; font-size:30px; border:none" id="text" type="text"> <br>
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="one" type="button" onclick=writeNumbers('1')>1</button>
-<button class="keyPadBtns" id="two" type="button" onclick=writeNumbers('2')>2</button>
-<button class="keyPadBtns" id="three" type="button" onclick=writeNumbers('3')>3</button>
+<button class="btnSize" id="one" type="button" onclick=writeNumbers('1')><span class="keyPadBtns">1</span><br><span class="keyPadLetters" style="visibility:hidden;">A</span></button>
+<button class="btnSize" id="two" type="button" onclick=writeNumbers('2')><span class="keyPadBtns">2</span><br><span class="keyPadLetters">ABC</span></button>
+<button class="btnSize" id="three" type="button" onclick=writeNumbers('3')><span class="keyPadBtns">3</span><br><span class="keyPadLetters">DEF</span></button>
 <br>
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="four" type="button" onclick=writeNumbers('4')>4</button>
-<button class="keyPadBtns" id="five" type="button" onclick=writeNumbers('5')>5</button>
-<button class="keyPadBtns" id="six" type="button" onclick=writeNumbers('6')>6</button>
+<button class="btnSize" id="four" type="button" onclick=writeNumbers('4')><span class="keyPadBtns">4</span><br><span class="keyPadLetters">GHI</span></button>
+<button class="btnSize" id="five" type="button" onclick=writeNumbers('5')><span class="keyPadBtns">5</span><br><span class="keyPadLetters">JKL</span></button>
+<button class="btnSize" id="six" type="button" onclick=writeNumbers('6')><span class="keyPadBtns">6</span><br><span class="keyPadLetters">MNO</span></button>
 <br>
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="seven" type="button" onclick=writeNumbers('7')>7</button>
-<button class="keyPadBtns" id="eight" type="button" onclick=writeNumbers('8')>8</button>
-<button class="keyPadBtns" id="nine" type="button" onclick=writeNumbers('9')>9</button>
+<button class="btnSize" id="seven" type="button" onclick=writeNumbers('7')><span class="keyPadBtns">7</span><br><span class="keyPadLetters">PQRS</span></button>
+<button class="btnSize" id="eight" type="button" onclick=writeNumbers('8')><span class="keyPadBtns">8</span><br><span class="keyPadLetters">TUV</span></button>
+<button class="btnSize" id="nine" type="button" onclick=writeNumbers('9')><span class="keyPadBtns">9</span><br><span class="keyPadLetters">WXYZ</span></button>
 <br>
 </div>
 
 <div id="container">
-<button class="keyPadBtns" id="star" type="button" onclick=writeNumbers('+')>+</button>
-<button class="keyPadBtns" id="zero" type="button" onclick=writeNumbers('0')>0</button>
-<button class="keyPadBtns" id="pound" type="button" onclick=writeNumbers('#')>#</button>
+<button class="btnSize" id="star" type="button" onclick=writeNumbers('+')><span class="keyPadBtns">+</span><br><span class="keyPadLetters"></span></button>
+<button class="btnSize" id="zero" type="button" onclick=writeNumbers('0')><span class="keyPadBtns">0</span><br><span class="keyPadLetters"></span></button>
+<button class="btnSize" id="pound" type="button" onclick=writeNumbers('#')><span class="keyPadBtns">#</span><br><span class="keyPadLetters"></span></button>
 <br>
 </div>
 
@@ -131,7 +140,7 @@ align-items: center;
 <div id="container">
 <button style="visibility:hidden;">Clear</button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
-<button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="calling();"><img id="calling-icon" width="80" height="80" src="./call-start.png"></button>
+<button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="calling();"><img id="calling-icon" width="60" height="60" src="./call-start.png"></button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
 <button id="clearBtn" style="background-color: transparent; border: none; font-size:20px" onclick = refreshpage()>Clear</button>
 </div>
@@ -202,7 +211,7 @@ window.location.href = "tel:" + txt.value;
 document.getElementById("calling-icon").src="call-end.png";
 document.getElementById("calling-button").style.backgroundColor = "red";
 document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
+call.value = "Calling Started";
 audio.play();
 document.getElementById("calling-button").onclick = refreshpage;
 setTimeout(refreshpage,107000);
