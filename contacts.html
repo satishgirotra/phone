@@ -75,7 +75,6 @@ body {
 </head>
 <body>
 
-<audio id="audio" src="ring.mp3" onended="refreshpage()"></audio>
 
 <div class="header" id="myHeader"><h2>Contacts &#8203</h2><h2><a style="text-decoration:none; color:black;" href="./new.html">+</a></h2></div>
 
@@ -142,6 +141,7 @@ body {
 <a class="contact" style="color:black;" href="tel:0119999026023">Prabha Didi Son Rajesh</a><hr>
 <a class="contact" style="color:black;" href="tel:+919810647304">Prabha Didi Son Rajesh</a><hr>
 <a class="contact" style="color:black;" href="tel:4436189193">Preyinka Mom.  Suraj</a><hr>
+<a class="contact" style="color:black;" fakeNum="7575028952" onclick='startFakeCall(this.textContent , this.getAttribute("fakeNum"))'>Proxity John</a><hr>
 <a class="contact" style="color:black;" href="tel:4434361600">Radiology Advanced</a><hr>
 <a class="contact" style="color:black;" href="tel:+17346526107">Rajender Gattu</a><hr>
 <a class="contact" style="color:black;" href="tel:3017288056">Rajiv Rehani</a><hr>
@@ -221,17 +221,8 @@ document.addEventListener('gestureend', function(e) {
 });
 
 
-function refreshpage() {
-    window.location.reload();
-}
-
-function calling() {
-    audio.play();
-    setTimeout(refreshpage,107000);
-}
-
-function startFakeCall(fakeName) {
-    window.location.href = './call-contact.html?contactDetails=' + fakeName;
+function startFakeCall(fakeName , fakeNum) {
+    window.location.href = './keypad.html?fakeContactName=' + fakeName + '&fakeContactNum=' + fakeNum;
 }
 
 </script>
