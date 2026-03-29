@@ -77,8 +77,6 @@ style=""""
 </head>
 <body>
 
-<audio id="audio" src="ring.mp3" onended="refreshpage()"></audio>
-
 <div class="header" id="myHeader"><h2>Calls & Voicemails</h2></div>
 
 
@@ -183,17 +181,8 @@ document.addEventListener('gestureend', function(e) {
 });
 
 
-function refreshpage() {
-    window.location.reload();
-}
-
-function calling() {
-    audio.play();
-    setTimeout(refreshpage,107000);
-}
-
-function startFakeCall(fakeName) {
-    window.location.href = './call-contact.html?contactDetails=' + fakeName;
+function startFakeCall(fakeName , fakeNum) {
+    window.location.href = './keypad.html?fakeContactName=' + fakeName + '&fakeContactNum=' + fakeNum;
 }
 
 
