@@ -93,8 +93,12 @@ align-items: center;
 </head>
 <body>
 
-<audio id="audio" src="ring.mp3" onended="refreshpage()"></audio>
-
+<audio id="ring" src="ring.mp3" onended="refreshpage()"></audio>
+<audio id="passport" src="passport.mp3" onended="refreshpage()"></audio>
+<audio id="proxity" src="proxity.mp3" onended="refreshpage()"></audio>
+<audio id="supplycore" src="supplycore.mp3" onended="refreshpage()"></audio>
+<audio id="unicor" src="unicor.mp3" onended="refreshpage()"></audio>
+<audio id="vmBox" src="vmBox.mp3" onended="refreshpage()"></audio>
 
 
 
@@ -206,13 +210,63 @@ if ( whitelistAllNumbers == "YES" || keypadWhitelist.includes(txt.value) ) {
 
 window.location.href = "tel:" + txt.value;
 
+} else if (txt.value == "18774872778" || txt.value == "8774872778" || txt.value == "8888747793") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+passport.play();
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
+} else if (txt.value == "7575028951" || txt.value == "7575028952" || txt.value == "7573019994") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+proxity.play();
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
+} else if (txt.value == "8008607940" || txt.value == "8159647940" || txt.value == "8159971628" || txt.value == "8159975419" || txt.value == "6085611544" || txt.value == "8159971666" || txt.value == "8159975398" || txt.value == "8472879051" || txt.value == "8159971648" || txt.value == "18778229286" || txt.value == "3375370585" || txt.value == "8159971651") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+supplycore.play();
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
+} else if (txt.value == "2023073198" || txt.value == "4052624875" || txt.value == "4053197708" || txt.value == "4053197670" || txt.value == "6065981900" || txt.value == "4046355100" || txt.value == "8433879503" || txt.value == "8433879400" || txt.value == "2023053823" || txt.value == "2022093869" || txt.value == "6627514800") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+unicor.play();
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
+} else if (txt.value == "3018062639") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+vmBox.play();
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
 } else {
 
 document.getElementById("calling-icon").src="call-end.png";
 document.getElementById("calling-button").style.backgroundColor = "red";
 document.getElementById("clearBtn").style.visibility = "hidden";
 call.value = "Call Started";
-audio.play();
+ring.play();
 document.getElementById("calling-button").onclick = refreshpage;
 setTimeout(refreshpage,107000);
 
