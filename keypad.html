@@ -93,14 +93,15 @@ align-items: center;
 </head>
 <body>
 
-<audio id="busy" src="busy.mp3" onended="refreshpage()"></audio>
 <audio id="ring" src="ring.mp3" onended="refreshpage()"></audio>
+<audio id="vmBox" src="vmBox.mp3" onended="refreshpage()"></audio>
+<audio id="busy" src="busy.mp3" onended="refreshpage()"></audio>
 <audio id="passport" src="passport.mp3" onended="refreshpage()"></audio>
 <audio id="proxity" src="proxity.mp3" onended="refreshpage()"></audio>
 <audio id="supplycore" src="supplycore.mp3" onended="refreshpage()"></audio>
 <audio id="unicor" src="unicor.mp3" onended="refreshpage()"></audio>
-<audio id="vmBox" src="vmBox.mp3" onended="refreshpage()"></audio>
-
+<audio id="CIBT" src="CIBT.mp3" onended="refreshpage()"></audio>
+<audio id="bain" src="bain.mp3" onended="refreshpage()"></audio>
 
 
 
@@ -242,6 +243,16 @@ vmBox.play();
 document.getElementById("calling-button").onclick = refreshpage;
 setTimeout(refreshpage,107000);
 
+} else if (txt.value == "4103137213") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+if (whitelistAllNumbers == "YES") {busy.play();} else {bain.play();}
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
 } else if (txt.value == "18774872778" || txt.value == "8774872778" || txt.value == "8888747793") {
 
 document.getElementById("calling-icon").src="call-end.png";
@@ -259,6 +270,16 @@ document.getElementById("calling-button").style.backgroundColor = "red";
 document.getElementById("clearBtn").style.visibility = "hidden";
 call.value = "Call Started";
 if (whitelistAllNumbers == "YES") {busy.play();} else {proxity.play();}
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
+} else if (txt.value == "8009292428" || txt.value == "8773048071") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+if (whitelistAllNumbers == "YES") {busy.play();} else {CIBT.play();}
 document.getElementById("calling-button").onclick = refreshpage;
 setTimeout(refreshpage,107000);
 
@@ -303,7 +324,8 @@ setTimeout(refreshpage,107000);
 }
 
 function refreshpage() {
-    window.location.reload();
+    // window.location.reload();
+    window.location = window.location.pathname;
 }
 
 </script>
