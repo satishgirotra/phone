@@ -243,6 +243,16 @@ vmBox.play();
 document.getElementById("calling-button").onclick = refreshpage;
 setTimeout(refreshpage,107000);
 
+} else if (txt.value == "4103814373") {
+
+document.getElementById("calling-icon").src="call-end.png";
+document.getElementById("calling-button").style.backgroundColor = "red";
+document.getElementById("clearBtn").style.visibility = "hidden";
+call.value = "Call Started";
+if (whitelistAllNumbers == "YES") {busy.play();} else {busy.play();}
+document.getElementById("calling-button").onclick = refreshpage;
+setTimeout(refreshpage,107000);
+
 } else if (txt.value == "4103137213") {
 
 document.getElementById("calling-icon").src="call-end.png";
