@@ -1,30 +1,10 @@
 <!DOCTYPE html>
 
-<script>
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// either set to YES or NO
-var whitelistAllNumbers = "NO";
-
-var keypadWhitelist = ['3018064071' , '4103137680' , '+12404613608' , '3014451040' , '3014045258' , '3014959777' , '7322599418' , '7324040642' , '7325937053' , '918046069562' , '+447940050044' , '4106089060' , '7057921510' , '+919878375376' , '4435830880' , '+61412546803' , '4432768840' , '8002662278' , '7742533451' , '5712633947' , '7743657575' , '7742531295' , '3018091552' , '+919811217112' , '+14107684700' , '4435398720' , '011911126018873' , '011918826655325' , '4105319579' , '4438121630' , '0119111204374707' , '+919811287253' , '3013842133' , '4109643611' , '3092531405' , '4105507871' , '011919910420170' , '011919310425550' , '011919811637151' , '+911244044059' , '4107159900' , '4435730942' , '2408995482' , '4437558990' , '5084097856' , '+919814711736' , '+919871825853' , '4437184067' , '8049685700' , '4104614266' , '76200' , '+919810003511' , '0119999026023' , '+919810647304' , '4436189193' , '4434361600' , '+17346526107' , '3017288056' , '3014045258' , '5088781498' , '7347316107' , '7346528142' , '+12812076449' , '+18326930948' , '2407235725' , '+14438785431' , '3013103795' , '+14108120314' , '4107074135' , '5086156739' , '2403372022' , '4109601435' , '4109352786' , '+14104486400' , '+12023297774' , '4432552675' , '9739444482' , '4102909990' , '7323518588' , '7325700861' , '4435455464'];
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-</script>
-
 <html>
 
 <head>
 
+<script src="data.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   
@@ -93,59 +73,48 @@ align-items: center;
 </head>
 <body>
 
-<audio id="ring" src="ring.mp3" onended="refreshpage()"></audio>
-<audio id="vmBox" src="vmBox.mp3" onended="refreshpage()"></audio>
-<audio id="busy" src="busy.mp3" onended="refreshpage()"></audio>
-<audio id="passport" src="passport.mp3" onended="refreshpage()"></audio>
-<audio id="proxity" src="proxity.mp3" onended="refreshpage()"></audio>
-<audio id="supplycore" src="supplycore.mp3" onended="refreshpage()"></audio>
-<audio id="unicor" src="unicor.mp3" onended="refreshpage()"></audio>
-<audio id="CIBT" src="CIBT.mp3" onended="refreshpage()"></audio>
-<audio id="bain" src="bain.mp3" onended="refreshpage()"></audio>
-
-
 
 <div id="container">
-<input disabled style="background-color: transparent; text-align: center; font-size:40px; border:none" id="calling" type="text"> <br>
+<input disabled style="background-color: transparent; text-align: center; font-size:40px; border:none" id="callStatus" type="text"> <br>
 </div>
 
 
 <div id="container">
-<input disabled style="background-color: transparent; text-align: center; font-size:40px; border:none" id="text" type="text">
+<input disabled style="background-color: transparent; text-align: center; font-size:40px; border:none" id="numberInputField" type="text">
 </div>
 
 <div style="justify-content: center; text-align: center; align-items: center;">
-<div style="display:none; text-wrap:wrap; text-align: center; align-items: center; font-size:40px; border:none" id="fakeContactDisplay"></div>
+<div style="display:none; text-wrap:wrap; text-align: center; align-items: center; font-size:40px; border:none" id="decoyContactDisplay"></div>
 </div>
 
 
 <div id="numPad">
 
 <div id="container">
-<button class="btnSize" id="one" type="button" onclick=writeNumbers('1')><span class="keyPadBtns">1</span><br><span class="keyPadLetters" style="visibility:hidden;">A</span></button>
-<button class="btnSize" id="two" type="button" onclick=writeNumbers('2')><span class="keyPadBtns">2</span><br><span class="keyPadLetters">ABC</span></button>
-<button class="btnSize" id="three" type="button" onclick=writeNumbers('3')><span class="keyPadBtns">3</span><br><span class="keyPadLetters">DEF</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('1')><span class="keyPadBtns">1</span><br><span class="keyPadLetters" style="visibility:hidden;">A</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('2')><span class="keyPadBtns">2</span><br><span class="keyPadLetters">ABC</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('3')><span class="keyPadBtns">3</span><br><span class="keyPadLetters">DEF</span></button>
 <br>
 </div>
 
 <div id="container">
-<button class="btnSize" id="four" type="button" onclick=writeNumbers('4')><span class="keyPadBtns">4</span><br><span class="keyPadLetters">GHI</span></button>
-<button class="btnSize" id="five" type="button" onclick=writeNumbers('5')><span class="keyPadBtns">5</span><br><span class="keyPadLetters">JKL</span></button>
-<button class="btnSize" id="six" type="button" onclick=writeNumbers('6')><span class="keyPadBtns">6</span><br><span class="keyPadLetters">MNO</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('4')><span class="keyPadBtns">4</span><br><span class="keyPadLetters">GHI</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('5')><span class="keyPadBtns">5</span><br><span class="keyPadLetters">JKL</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('6')><span class="keyPadBtns">6</span><br><span class="keyPadLetters">MNO</span></button>
 <br>
 </div>
 
 <div id="container">
-<button class="btnSize" id="seven" type="button" onclick=writeNumbers('7')><span class="keyPadBtns">7</span><br><span class="keyPadLetters">PQRS</span></button>
-<button class="btnSize" id="eight" type="button" onclick=writeNumbers('8')><span class="keyPadBtns">8</span><br><span class="keyPadLetters">TUV</span></button>
-<button class="btnSize" id="nine" type="button" onclick=writeNumbers('9')><span class="keyPadBtns">9</span><br><span class="keyPadLetters">WXYZ</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('7')><span class="keyPadBtns">7</span><br><span class="keyPadLetters">PQRS</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('8')><span class="keyPadBtns">8</span><br><span class="keyPadLetters">TUV</span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('9')><span class="keyPadBtns">9</span><br><span class="keyPadLetters">WXYZ</span></button>
 <br>
 </div>
 
 <div id="container">
-<button class="btnSize" id="star" type="button" onclick=writeNumbers('+')><span class="keyPadBtns">+</span><br><span class="keyPadLetters"></span></button>
-<button class="btnSize" id="zero" type="button" onclick=writeNumbers('0')><span class="keyPadBtns">0</span><br><span class="keyPadLetters"></span></button>
-<button class="btnSize" id="pound" type="button" onclick=writeNumbers('#')><span class="keyPadBtns">#</span><br><span class="keyPadLetters"></span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('+')><span class="keyPadBtns">+</span><br><span class="keyPadLetters"></span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('0')><span class="keyPadBtns">0</span><br><span class="keyPadLetters"></span></button>
+<button class="btnSize" type="button" onclick=writeNumbers('#')><span class="keyPadBtns">#</span><br><span class="keyPadLetters"></span></button>
 <br>
 </div>
 
@@ -156,9 +125,9 @@ align-items: center;
 <div id="container">
 <button style="visibility:hidden;">Clear</button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
-<button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="calling();"><img id="calling-icon" width="80" height="80" src="./call-start.png"></button>
+<button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="startCall();"><img id="calling-icon" width="80" height="80" src="./call-start.png"></button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
-<button id="clearBtn" style="background-color: transparent; border: none; font-size:20px" onclick = refreshpage()>Clear</button>
+<button id="clearBtn" style="background-color: transparent; border: none; font-size:20px" onclick = refreshPage()>Clear</button>
 </div>
 
 
@@ -175,7 +144,7 @@ align-items: center;
     <img src="./contacts.png">
     <span class="nav__text">Contacts</span>
   </a>
-  <a style="background-color:lightgrey" href="./keypad.html" class="nav__link">
+  <a style="background-color:lightgrey" onclick='refreshPage()' class="nav__link">
     <img src="./keypad.png">
     <span class="nav__text">Keypad</span>
   </a>
@@ -189,153 +158,105 @@ align-items: center;
 
 <script>
 
+var decoyCallInProgress = false;
+
+////////////////////////////////////////
+// PREVENT ZOOMING
+////////////////////////////////////////
 document.addEventListener('gesturestart', function(e) {
-    e.preventDefault();
-    document.body.style.zoom = 0.99;
-});
-
+  e.preventDefault();
+  document.body.style.zoom = 0.99;});
 document.addEventListener('gesturechange', function(e) {
-    e.preventDefault();
-    document.body.style.zoom = 0.99;
-});
-
+  e.preventDefault();
+  document.body.style.zoom = 0.99;});
 document.addEventListener('gestureend', function(e) {
-    e.preventDefault();
-    document.body.style.zoom = 0.99;
-});
+  e.preventDefault();
+  document.body.style.zoom = 0.99;});
 
 
-
-if (new URLSearchParams(location.search).has("fakeContactName")) {
-document.getElementById("numPad").style.display= "none";
-document.getElementById("text").style.display= "none";
-document.getElementById("fakeContactDisplay").style.display= "inline";
-document.getElementById("clearBtn").style.visibility = "hidden";
-document.getElementById("fakeContactDisplay").textContent = new URLSearchParams(location.search).get("fakeContactName");
-document.getElementById("text").value = new URLSearchParams(location.search).get("fakeContactNum");
+////////////////////////////////////////
+// HANDLES CONTACT INFO PASSED IN FROM URL PARAMETERS
+////////////////////////////////////////
+if (new URLSearchParams(location.search).has("decoyContactName")) {
+  document.getElementById("numPad").style.display= "none";
+  document.getElementById("numberInputField").style.display= "none";
+  document.getElementById("decoyContactDisplay").style.display= "inline";
+  document.getElementById("clearBtn").style.visibility = "hidden";
+  document.getElementById("decoyContactDisplay").textContent = new URLSearchParams(location.search).get("decoyContactName");
+  document.getElementById("numberInputField").value = new URLSearchParams(location.search).get("decoyContactNum");
 }
 
-
-
-function writeNumbers(el) {
-var txt = document.getElementById("text");
-txt.value = txt.value + el;
+////////////////////////////////////////
+// DISPLAYS DIALED DIGITS ON SCREEN
+////////////////////////////////////////
+function writeNumbers(inputDigit) {
+  if (decoyCallInProgress == false) {
+    var currentInputData = document.getElementById("numberInputField");
+    currentInputData.value = currentInputData.value + inputDigit;
+  }
 }
 
-function calling() {
-
-var txt = document.getElementById("text");
-var call = document.getElementById("calling");
-
-document.getElementById("numPad").style.display= "inline";
-document.getElementById("fakeContactDisplay").style.textWrap = "nowrap";
-
-
-if (txt.value !== "") {
-
-if (txt.value == "3018062639") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-vmBox.play();
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if (txt.value == "4103814373") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-if (whitelistAllNumbers == "YES") {busy.play();} else {busy.play();}
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if (txt.value == "4103137213") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-if (whitelistAllNumbers == "YES") {busy.play();} else {bain.play();}
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if (txt.value == "18774872778" || txt.value == "8774872778" || txt.value == "8888747793") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-if (whitelistAllNumbers == "YES") {busy.play();} else {passport.play();}
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if (txt.value == "7575028951" || txt.value == "7575028952" || txt.value == "7573019994") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-if (whitelistAllNumbers == "YES") {busy.play();} else {proxity.play();}
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if (txt.value == "8009292428" || txt.value == "8773048071") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-if (whitelistAllNumbers == "YES") {busy.play();} else {CIBT.play();}
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if (txt.value == "8008607940" || txt.value == "8159647940" || txt.value == "8159971628" || txt.value == "8159975419" || txt.value == "6085611544" || txt.value == "8159971666" || txt.value == "8159975398" || txt.value == "8472879051" || txt.value == "8159971648" || txt.value == "18778229286" || txt.value == "3375370585" || txt.value == "8159971651") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-if (whitelistAllNumbers == "YES") {busy.play();} else {supplycore.play();}
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if (txt.value == "2023073198" || txt.value == "4052624875" || txt.value == "4053197708" || txt.value == "4053197670" || txt.value == "6065981900" || txt.value == "4046355100" || txt.value == "8433879503" || txt.value == "8433879400" || txt.value == "2023053823" || txt.value == "2022093869" || txt.value == "6627514800") {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-if (whitelistAllNumbers == "YES") {busy.play();} else {unicor.play();}
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
-} else if ( whitelistAllNumbers == "YES" || keypadWhitelist.includes(txt.value) ) {
-
-window.location.href = "tel:" + txt.value;
-
-} else {
-
-document.getElementById("calling-icon").src="call-end.png";
-document.getElementById("calling-button").style.backgroundColor = "red";
-document.getElementById("clearBtn").style.visibility = "hidden";
-call.value = "Call Started";
-ring.play();
-document.getElementById("calling-button").onclick = refreshpage;
-setTimeout(refreshpage,107000);
-
+////////////////////////////////////////
+// REFRESHES PAGE IF URL PARAMETERS DO NOT EXIST. ELSE NAVIGATES PAGE BACK TO ITSELF
+////////////////////////////////////////
+function refreshPage() {
+  if (new URLSearchParams(location.search).has("decoyContactName")) {
+    window.location.href = './keypad.html'
+  } else {
+    window.location.reload()
+  }
 }
 
+////////////////////////////////////////
+// PRESENTS DECOY CALLING INTERFACE
+////////////////////////////////////////
+function presentDecoyCallingInterface (dialingAudio) {
+  decoyCallInProgress = true;
+  document.getElementById("numPad").style.display= "inline";
+  document.getElementById("decoyContactDisplay").style.textWrap = "nowrap";
+  document.getElementById("calling-icon").src="call-end.png";
+  document.getElementById("calling-button").style.backgroundColor = "red";
+  document.getElementById("clearBtn").style.visibility = "hidden";
+  document.getElementById("callStatus").value = "Call Started";
+  document.getElementById("calling-button").onclick = refreshPage;
+  setTimeout(refreshPage,107000);
+
+  const audio = new Audio(dialingAudio + '.mp3');
+  audio.addEventListener('ended', () => {refreshPage();});
+  audio.play();
 }
 
-}
+////////////////////////////////////////
+// STARTS CALL
+////////////////////////////////////////
+function startCall () {
 
-function refreshpage() {
-    window.location.reload();
-    // window.location = window.location.pathname;
+  var userEnteredTelNumber = document.getElementById("numberInputField").value;
+
+  if (userEnteredTelNumber !== "") {
+
+    var contactCard = contacts.find(obj => obj.telNumber === userEnteredTelNumber);
+
+    if (environmentStatus == "private") {
+      if (contactCard === undefined) {
+        presentDecoyCallingInterface('standard');
+      } else if (contactCard.privateAudio !== "") {
+        presentDecoyCallingInterface(contactCard.privateAudio);
+      } else {
+        window.location.href = "tel:" + userEnteredTelNumber;
+      }
+    } else if (environmentStatus == "public") {
+      if (contactCard === undefined) {
+        window.location.href = "tel:" + userEnteredTelNumber;
+      } else if (contactCard.publicAudio !== "") {
+        presentDecoyCallingInterface(contactCard.publicAudio);
+      } else {
+        window.location.href = "tel:" + userEnteredTelNumber;
+      }
+    }
+
+  }
+
 }
 
 </script>
