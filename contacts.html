@@ -77,9 +77,36 @@ body {
 <body>
 
 
-<div class="header" id="myHeader"><h2>Contacts &#8203</h2><h2><a style="text-decoration:none; color:black;" href="./new.html">+</a></h2></div>
+<div class="header"><h2>Contacts &#8203</h2><h2><a style="text-decoration:none; color:black;" href="./new.html">+</a></h2></div>
+
+<input searchBar placeholder="Search" style="width:100%; font-size:25px; background: seashell;">
+
 
 <script>
+
+var totalEntriesCount = 0;
+
+////////////////////////////////////////
+// SEARCH BAR LOGIC
+////////////////////////////////////////
+document.querySelector("[searchBar]").addEventListener("input", e => {
+
+var currentEntry = 1;
+
+while (currentEntry <= totalEntriesCount){
+  const inputTextValue = e.target.value.toLowerCase();
+  var entryParentHTMLelement = document.getElementById('parent ' + String(currentEntry));
+  var entryChildHTMLelement = document.getElementById('child ' + String(currentEntry));
+  const entryValue = entryChildHTMLelement.innerHTML.toLowerCase();
+  if (entryValue.includes(inputTextValue)) {
+    entryParentHTMLelement.style.display = "inline";
+  } else {
+    entryParentHTMLelement.style.display = "none";
+  }
+  currentEntry++;
+}
+
+})
 
 ////////////////////////////////////////
 // PREVENT ZOOMING
@@ -136,9 +163,12 @@ function writeEntriesToPage(entriesList) {
         '</span>';
       }
 
+      totalEntriesCount++;
 
       entriesToWrite = entriesToWrite +
-      '<a class="contact" style="color:' +
+      '<div id="parent ' + totalEntriesCount + '">' +
+      '<a id="child ' + totalEntriesCount + '" ' +
+      'class="contact" style="color:' +
       entriesList[currentEntryAddress].textColor +
       ';"' +
       callHandlingInstructions +
@@ -146,7 +176,8 @@ function writeEntriesToPage(entriesList) {
       entriesList[currentEntryAddress].name +
       '</a>' +
       captionInstructions +
-      '<hr>';
+      '<hr>' +
+      '</div>';
 
     }
 
