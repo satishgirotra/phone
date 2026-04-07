@@ -2,7 +2,7 @@
 // when set to private  - privateAudio plays if assigned.  allows outgoing calls to contacts without privateAudio. unsaved numbers play standard audio.
 // when set to public - publicAudio plays if assigned. all other outgoing calls are allowed.
 ////////////////////////////////////////
-var environmentStatus = "private";
+var environmentStatus = "public";
 
 var contacts =[
 
@@ -19,7 +19,7 @@ var contacts =[
 ////////////////////////////////////////
 // DECOY CONTACTS (NOT IN ICLOUD. IF NEED TO ALLOW TRUE CONTACT DURING environmentStatus = "private" - TEMPORARILY ADD TO ICLOUD)
 ////////////////////////////////////////
-{name: 'USPS', telNumber: '4103814373', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
+//{name: 'USPS', telNumber: '4103814373', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
 {name: 'Howard County Library', telNumber: '4103137700', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'hcLibrary', publicAudio: 'busy', },
 {name: 'Bain Center', telNumber: '4103137213', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'bain', publicAudio: 'busy', },
 {name: 'Passport Office', telNumber: '18774872778', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'passport', publicAudio: 'busy', },
