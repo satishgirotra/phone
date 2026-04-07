@@ -20,7 +20,7 @@ var contacts =[
 // DECOY CONTACTS (NOT IN ICLOUD. IF NEED TO ALLOW TRUE CONTACT DURING environmentStatus = "private" - TEMPORARILY ADD TO ICLOUD)
 ////////////////////////////////////////
 //{name: 'USPS', telNumber: '4103814373', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
-{name: 'Howard County Library', telNumber: '4103137700', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'hcLibrary', publicAudio: 'busy', },
+// {name: 'Howard County Library', telNumber: '4103137700', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'hcLibrary', publicAudio: 'busy', },
 {name: 'Bain Center', telNumber: '4103137213', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'bain', publicAudio: 'busy', },
 //{name: 'Passport Office', telNumber: '18774872778', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'passport', publicAudio: 'busy', },
 //{name: 'Passport Office', telNumber: '8774872778', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'passport', publicAudio: 'busy', },
