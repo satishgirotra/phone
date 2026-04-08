@@ -180,6 +180,7 @@ function playVoicemail(receivedVoicemail , playButtonReference) {
 
   voicemailAudio.addEventListener('ended', () => {
     playButtonReference.querySelector('img').src="play-button.png";
+    voicemailAudio.load();
     playButtonReference.onclick = function() {
       voicemailAudio.play();
     };
