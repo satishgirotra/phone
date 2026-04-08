@@ -22,6 +22,9 @@ var contacts =[
 {name: 'USPS', telNumber: '4103814373', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
 {name: 'Howard County Library', telNumber: '4103137700', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'hcLibrary', publicAudio: 'busy', },
 {name: 'Bain Center', telNumber: '4103137213', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'bain', publicAudio: 'busy', },
+{name: 'MVA', telNumber: '18009501682', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'mva', publicAudio: 'busy', },
+{name: 'MVA', telNumber: '8009501682', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'mva', publicAudio: 'busy', },
+{name: 'MVA', telNumber: '4107687000', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'mva', publicAudio: 'busy', },
 {name: 'Passport Office', telNumber: '18774872778', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'passport', publicAudio: 'busy', },
 {name: 'Passport Office', telNumber: '8774872778', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'passport', publicAudio: 'busy', },
 {name: 'Passport Office', telNumber: '8888747793', caption: '', voicemail: '', textColor: 'black', display: false, privateAudio: 'passport', publicAudio: 'busy', },
@@ -147,10 +150,9 @@ var contacts =[
 var calls = [
 
 ////////////////////////////////////////
-// UNCOMMENT WHEN NEED TO SHOW VOICEMAIL IS WORKING
+// UNCOMMENT TO PROVE VOICEMAIL IS WORKING
 ////////////////////////////////////////
 //{name: 'Shivaan', telNumber: '3018064071', caption: 'Today', voicemail: 'vmTest', textColor: 'red', display: true, privateAudio: '', publicAudio: '', },
-
 
 ////////////////////////////////////////
 // CALLS
