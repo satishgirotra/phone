@@ -58,7 +58,7 @@ body {
     font-weight:bold;
     font-size:40px;
     display:inline-block;
-    padding-left:25px;
+    padding-left:10px;
     padding-right:25px
 }
 
@@ -66,7 +66,7 @@ body {
     font-size:20px;
     font-weight: bold;
     color:black;
-    padding:25px
+    padding:10px
 }
 
 style=""""
@@ -118,7 +118,7 @@ function writeEntriesToPage(entriesList) {
         '<button style="background-color: transparent; border: none; border-radius:0px" onclick="playVoicemail(' +
         '\'' + entriesList[currentEntryAddress].voicemail + '\',' +
         'this' +
-        ')"><img width="30" height="40" src="./play-button.png"></button>';
+        ')"><img width="30" height="30" src="play-button.png"></button>';
       }
 
 
@@ -175,10 +175,22 @@ function startDecoyCall(decoyName , decoyNum) {
 ////////////////////////////////////////
 function playVoicemail(receivedVoicemail , playButtonReference) {
 
-  playButtonReference.disabled = true;
-
   const voicemailAudio = new Audio(receivedVoicemail + '.mp3');
-  voicemailAudio.addEventListener('ended', () => {playButtonReference.disabled = false;});
+
+  voicemailAudio.addEventListener('ended', () => {
+    playButtonReference.querySelector('img').src="play-button.png";
+    playButtonReference.onclick = function() {
+      voicemailAudio.play();
+    };
+  });
+
+  voicemailAudio.addEventListener('playing', () => {
+    playButtonReference.querySelector('img').src="stop-button.png";
+    playButtonReference.onclick = function() {
+      voicemailAudio.currentTime = voicemailAudio.duration;
+    };
+  });
+
   voicemailAudio.play();
 
 }
