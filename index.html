@@ -176,6 +176,7 @@ function startDecoyCall(decoyName , decoyNum) {
 function playVoicemail(receivedVoicemail , playButtonReference) {
 
   const voicemailAudio = new Audio(receivedVoicemail + '.mp3');
+  voicemailAudio.controls = false;
 
   voicemailAudio.addEventListener('ended', () => {
     playButtonReference.querySelector('img').src="play-button.png";
