@@ -115,7 +115,7 @@ function writeEntriesToPage(entriesList) {
 
       if (entriesList[currentEntryAddress].voicemail !== '') {
         voicemailInstructions =
-        '<button style="background-color: transparent; border: none; border-radius:0px" onclick="playVoicemail(' +
+        '<button style="padding:0px; padding-left:10px; background-color: transparent; border: none;" onclick="playVoicemail(' +
         '\'' + entriesList[currentEntryAddress].voicemail + '\',' +
         'this' +
         ')"><img width="33" height="33" src="play-button.png"></button>';
