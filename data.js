@@ -194,6 +194,5 @@ var calls = [
 {name: 'Dolly Cell.    10th August', telNumber: '7742531295', caption: '', voicemail: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Suraj Dad', telNumber: '2403372022', caption: '', voicemail: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Rajiv Rehani', telNumber: '3017288056', caption: '', voicemail: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'TEST', telNumber: '3018064071', caption: 'Today', voicemail: 'vmTest', textColor: 'red', display: true, privateAudio: '', publicAudio: '', },
 
 ]
