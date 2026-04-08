@@ -61,9 +61,9 @@ body {
 <div class="header" id="myHeader"><h2>Create New Contact</h2></div>
 
 <span id="name" style="display: flex; justify-content: center; text-align:center; font-size:40px;">Enter Name:</span></br>
-<div id="nameInput" style="display: flex; justify-content: center;"><input style="width:80%; font-size:40px;" id="calling" type="text"></div> <br><br>
+<div id="nameInput" style="display: flex; justify-content: center;"><input style="background: seashell; width:80%; font-size:40px;" id="calling" type="text"></div> <br><br>
 <span id="number" style="display: flex; justify-content: center; text-align:center; font-size:40px;">Enter Phone Number:</span></br>
-<div id="numberInput" style="display: flex; justify-content: center;"><input style="width:80%; font-size:40px;" id="calling" type="text"></div> <br>
+<div id="numberInput" style="display: flex; justify-content: center;"><input style="background: seashell; width:80%; font-size:40px;" id="calling" type="text"></div> <br>
 <div id="submitBtn" style="display: flex; justify-content: center;"><button onclick="submitted();" style="font-size:20px;">Submit</button></div>
 
 
@@ -107,11 +107,11 @@ document.addEventListener('gestureend', function(e) {
 
 
 function submitted() {
-    document.getElementById("nameInput").style.display = "none";
-    document.getElementById("numberInput").style.display = "none";
-    document.getElementById("submitBtn").style.display = "none";
-    document.getElementById("name").textContent = "New contact added successfully.";
-    document.getElementById("number").textContent = "Please allow some time for contact list to update.";
+  document.getElementById("nameInput").style.display = "none";
+  document.getElementById("numberInput").style.display = "none";
+  document.getElementById("submitBtn").style.display = "none";
+  document.getElementById("name").textContent = "New contact added successfully.";
+  document.getElementById("number").textContent = "Please allow some time for contact list to update.";
 }
 
 
