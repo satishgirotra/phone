@@ -176,12 +176,14 @@ function startDecoyCall(decoyName , decoyNum) {
 function playVoicemail(receivedVoicemail , playButtonReference) {
 
   const voicemailAudio = new Audio(receivedVoicemail + '.mp3');
-  voicemailAudio.controls = false;
 
   voicemailAudio.addEventListener('ended', () => {
     playButtonReference.querySelector('img').src="play-button.png";
+    voicemailAudio.src = '';
     voicemailAudio.load();
     playButtonReference.onclick = function() {
+      voicemailAudio.src = receivedVoicemail + '.mp3';
+      voicemailAudio.load();
       voicemailAudio.play();
     };
   });
