@@ -150,7 +150,7 @@ function writeEntriesToPage(entriesList) {
         callHandlingInstructions =
         'decoyNum="' +
         entriesList[currentEntryAddress].telNumber +
-        '" onclick=\'startDecoyCall(this.textContent , this.getAttribute("decoyNum"))\'';
+        '" onclick=\'requestDecoyCall(this.textContent , this.getAttribute("decoyNum"))\'';
       } else {
         callHandlingInstructions = 'href="tel:' + entriesList[currentEntryAddress].telNumber + '"';
       }
@@ -190,10 +190,10 @@ function writeEntriesToPage(entriesList) {
 
 
 ////////////////////////////////////////
-// START DECOY CALL
+// REQUESTS DECOY CALL
 ////////////////////////////////////////
-function startDecoyCall(decoyName , decoyNum) {
-    window.location.href = './keypad.html?decoyContactName=' + decoyName + '&decoyContactNum=' + decoyNum;
+function requestDecoyCall(decoyName , decoyNum) {
+    window.location.href = './keypad.html?decoyContactName=' + decoyName + '&decoyContactNum=' + encodeURIComponent(decoyNum);
 }
 
 
