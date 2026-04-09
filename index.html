@@ -109,52 +109,48 @@ function writeEntriesToPage(entriesList) {
 
   for (let currentEntryAddress = 0; currentEntryAddress < entriesList.length; currentEntryAddress++) {
 
-    if (entriesList[currentEntryAddress].display) {
+    var voicemailInstructions = '';
 
-      var voicemailInstructions = '';
-
-      if (entriesList[currentEntryAddress].voicemail !== '') {
-        voicemailInstructions =
-        '<button style="padding:0px; padding-left:10px; background-color: transparent; border: none;" onclick="playVoicemail(' +
-        '\'' + entriesList[currentEntryAddress].voicemail + '\',' +
-        'this' +
-        ')"><img width="33" height="33" src="play-button.png"></button>';
-      }
-
-
-      var callHandlingInstructions = '';
-
-      if (entriesList[currentEntryAddress].privateAudio !== '' || entriesList[currentEntryAddress].publicAudio !== '') {
-        callHandlingInstructions =
-        'decoyNum="' +
-        entriesList[currentEntryAddress].telNumber +
-        '" onclick=\'startDecoyCall(this.textContent , this.getAttribute("decoyNum"))\'';
-      } else {
-        callHandlingInstructions = 'href="tel:' + entriesList[currentEntryAddress].telNumber + '"';
-      }
-
-      var captionInstructions = '';
-
-      if (entriesList[currentEntryAddress].caption !== '') {
-        captionInstructions =
-        '<br><span class="caption">' +
-        entriesList[currentEntryAddress].caption +
-        '</span>';
-      }
-
-      entriesToWrite = entriesToWrite +
-      voicemailInstructions +
-      '<a class="contact" style="color:' +
-      entriesList[currentEntryAddress].textColor +
-      ';"' +
-      callHandlingInstructions +
-      '>' +
-      entriesList[currentEntryAddress].name +
-      '</a>' +
-      captionInstructions +
-      '<hr>';
-
+    if (entriesList[currentEntryAddress].voicemail !== '') {
+      voicemailInstructions =
+      '<button style="padding:0px; padding-left:10px; background-color: transparent; border: none;" onclick="playVoicemail(' +
+      '\'' + entriesList[currentEntryAddress].voicemail + '\',' +
+      'this' +
+      ')"><img width="33" height="33" src="play-button.png"></button>';
     }
+
+
+    var callHandlingInstructions = '';
+
+    if (entriesList[currentEntryAddress].checkDecoyRules) {
+      callHandlingInstructions =
+      'decoyNum="' +
+      entriesList[currentEntryAddress].telNumber +
+      '" onclick=\'requestDecoyCall(this.textContent , this.getAttribute("decoyNum"))\'';
+    } else {
+      callHandlingInstructions = 'href="tel:' + entriesList[currentEntryAddress].telNumber + '"';
+    }
+
+    var captionInstructions = '';
+
+    if (entriesList[currentEntryAddress].caption !== '') {
+      captionInstructions =
+      '<br><span class="caption">' +
+      entriesList[currentEntryAddress].caption +
+      '</span>';
+    }
+
+    entriesToWrite = entriesToWrite +
+    voicemailInstructions +
+    '<a class="contact" style="color:' +
+    entriesList[currentEntryAddress].textColor +
+    ';"' +
+    callHandlingInstructions +
+    '>' +
+    entriesList[currentEntryAddress].name +
+    '</a>' +
+    captionInstructions +
+    '<hr>';
 
   }
 
@@ -164,10 +160,10 @@ function writeEntriesToPage(entriesList) {
 
 
 ////////////////////////////////////////
-// START DECOY CALL
+// REQUESTS DECOY CALL
 ////////////////////////////////////////
-function startDecoyCall(decoyName , decoyNum) {
-  window.location.href = './keypad.html?decoyContactName=' + decoyName + '&decoyContactNum=' + decoyNum;
+function requestDecoyCall(decoyName , decoyNum) {
+  window.location.href = './keypad.html?decoyContactName=' + decoyName + '&decoyContactNum=' + encodeURIComponent(decoyNum);
 }
 
 ////////////////////////////////////////
