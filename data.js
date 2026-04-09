@@ -19,9 +19,31 @@ var contacts =[
 ////////////////////////////////////////
 // DECOY CONTACTS (NOT IN ICLOUD. IF NEED TO ALLOW TRUE CONTACT DURING environmentStatus = "public" - TEMPORARILY SET publicAudio TO '')
 ////////////////////////////////////////
+{name: 'Voicemail Box', telNumber: '3018062639', caption: '', textColor: 'black', display: false, privateAudio: 'vmBox', publicAudio: 'vmBox', },
 {name: 'USPS', telNumber: '4103814373', caption: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
 {name: 'Howard County Library', telNumber: '4103137700', caption: '', textColor: 'black', display: false, privateAudio: 'hcLibrary', publicAudio: 'busy', },
 {name: 'Bain Center', telNumber: '4103137213', caption: '', textColor: 'black', display: false, privateAudio: 'bain', publicAudio: 'busy', },
+{name: 'CAP1 main', telNumber: '18773834802', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
+{name: 'CAP1 clarskville', telNumber: '4105311788', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
+{name: 'CAP1 elkridge', telNumber: '4108722770', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
+{name: 'CAP1 burtonsville', telNumber: '3014768789', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
+{name: 'CAP1 laurel', telNumber: '3014976923', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
+{name: 'CIT', telNumber: '8554622652', caption: '', textColor: 'black', display: false, privateAudio: 'cit', publicAudio: 'busy', },
+{name: 'PNC main', telNumber: '18887622265', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
+{name: 'PNC columbia', telNumber: '4108729180', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
+{name: 'PNC clarksville', telNumber: '4105312113', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
+{name: 'PNC fulton', telNumber: '3014906050', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
+{name: 'PNC long gate', telNumber: '4104658979', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
+{name: 'PNC rogers ave', telNumber: '4107503800', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
+{name: 'MTB main', telNumber: '18007242440', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB banking', telNumber: '18007909130', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB columbia mall', telNumber: '4107401449', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB kings contrivance', telNumber: '4107401513', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB clarksville', telNumber: '4105317083', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB dobbin', telNumber: '4109646843', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB executive park', telNumber: '4107300125', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB bethany', telNumber: '4104652409', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB st johns', telNumber: '4104651628', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
 {name: 'MVA', telNumber: '18009501682', caption: '', textColor: 'black', display: false, privateAudio: 'mva', publicAudio: 'busy', },
 {name: 'MVA', telNumber: '8009501682', caption: '', textColor: 'black', display: false, privateAudio: 'mva', publicAudio: 'busy', },
 {name: 'MVA', telNumber: '4107687000', caption: '', textColor: 'black', display: false, privateAudio: 'mva', publicAudio: 'busy', },
@@ -59,7 +81,6 @@ var contacts =[
 {name: 'Unicor Latrell Green Office', telNumber: '2023053823', caption: '', textColor: 'black', display: false, privateAudio: 'unicor', publicAudio: 'busy', },
 {name: 'Unicor Latrell Green Cell', telNumber: '2022093869', caption: '', textColor: 'black', display: false, privateAudio: 'unicor', publicAudio: 'busy', },
 {name: 'Unicor Yazoo City Low', telNumber: '6627514800', caption: '', textColor: 'black', display: false, privateAudio: 'unicor', publicAudio: 'busy', },
-{name: 'Voicemail Box', telNumber: '3018062639', caption: '', textColor: 'black', display: false, privateAudio: 'vmBox', publicAudio: 'vmBox', },
 
 ////////////////////////////////////////
 // REAL CONTACTS
