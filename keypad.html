@@ -125,7 +125,7 @@ align-items: center;
 <div id="container">
 <button style="visibility:hidden;">Clear</button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
-<button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="startCall();"><img id="calling-icon" width="80" height="80" src="./call-start.png"></button>
+<button id="calling-button" style="background-color: green; border: none; border-radius:20px" onclick="processCallRequest();"><img id="calling-icon" width="80" height="80" src="./call-start.png"></button>
 <button style="visibility:hidden; width:1px">CLEAR</button>
 <button id="clearBtn" style="background-color: transparent; border: none; font-size:20px" onclick = refreshPage()>Clear</button>
 </div>
@@ -208,9 +208,9 @@ function refreshPage() {
 }
 
 ////////////////////////////////////////
-// PRESENTS DECOY CALLING INTERFACE
+// STARTS DECOY CALL
 ////////////////////////////////////////
-function presentDecoyCallingInterface (dialingAudio) {
+function startDecoyCall (dialingAudio) {
   decoyCallInProgress = true;
   document.getElementById("numPad").style.display= "inline";
   document.getElementById("decoyContactDisplay").style.textWrap = "nowrap";
@@ -227,9 +227,9 @@ function presentDecoyCallingInterface (dialingAudio) {
 }
 
 ////////////////////////////////////////
-// STARTS CALL
+// REQUESTS CALL
 ////////////////////////////////////////
-function startCall () {
+function processCallRequest () {
 
   var userEnteredTelNumber = document.getElementById("numberInputField").value;
 
@@ -239,17 +239,21 @@ function startCall () {
 
     if (environmentStatus == "private") {
       if (contactCard === undefined) {
-        presentDecoyCallingInterface('standard');
+        if (userEnteredTelNumber.startsWith("+") || userEnteredTelNumber.startsWith("011")) {
+          startDecoyCall('international');
+        } else {startDecoyCall('domestic');}
       } else if (contactCard.privateAudio !== "") {
-        presentDecoyCallingInterface(contactCard.privateAudio);
+        startDecoyCall(contactCard.privateAudio);
       } else {
         window.location.href = "tel:" + userEnteredTelNumber;
       }
     } else if (environmentStatus == "public") {
       if (contactCard === undefined) {
-        window.location.href = "tel:" + userEnteredTelNumber;
+        if (userEnteredTelNumber.startsWith("+") || userEnteredTelNumber.startsWith("011")) {
+          startDecoyCall('busy');
+        } else {window.location.href = "tel:" + userEnteredTelNumber;}
       } else if (contactCard.publicAudio !== "") {
-        presentDecoyCallingInterface(contactCard.publicAudio);
+        startDecoyCall(contactCard.publicAudio);
       } else {
         window.location.href = "tel:" + userEnteredTelNumber;
       }
