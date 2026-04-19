@@ -10,6 +10,7 @@ var contacts =[
 // TEMP CONTACTS (ADD/REMOVE FROM ICLOUD AND GSHEET WHEN FINALIZING)
 ////////////////////////////////////////
 /*IN ICLOUD*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domestic', publicAudio: '', },
+{name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'domestic', publicAudio: '', },
 
 ////////////////////////////////////////
 // 911 (NOT DISPLAYED)
