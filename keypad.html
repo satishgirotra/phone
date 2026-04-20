@@ -260,8 +260,8 @@ function processCallRequest () {
     if (environmentStatus == "private") {
       if (contactCard === undefined) {
         if ( (userEnteredTelNumber.startsWith("+") || userEnteredTelNumber.startsWith("011")) && !userEnteredTelNumber.startsWith("+1") ) {
-          startDecoyCall('international');
-        } else {startDecoyCall('domestic');}
+          startDecoyCall('internationalVM');
+        } else {startDecoyCall('domesticVM');}
       } else if (contactCard.privateAudio !== "") {
         startDecoyCall(contactCard.privateAudio);
       } else {
