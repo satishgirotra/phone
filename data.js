@@ -11,6 +11,7 @@ var contacts =[
 ////////////////////////////////////////
 /*7177448226 IN ICLOUD*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: 'busy', },
+{name: 'PT', telNumber: '4109885171', caption: '', textColor: 'black', display: false, privateAudio: 'busy', publicAudio: 'busy', },
 
 ////////////////////////////////////////
 // 911 (NOT DISPLAYED)
