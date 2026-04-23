@@ -22,7 +22,7 @@ var contacts =[
 // DECOY CONTACTS (NOT IN ICLOUD. IF NEED TO ALLOW TRUE CONTACT DURING environmentStatus = "public" - TEMPORARILY SET publicAudio TO '')
 ////////////////////////////////////////
 {name: 'Voicemail Box', telNumber: '3018062639', caption: '', textColor: 'black', display: false, privateAudio: 'vmBox', publicAudio: 'vmBox', },
-{name: 'USPS', telNumber: '4103814373', caption: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
+{name: 'USPS oak hall', telNumber: '4103814373', caption: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
 {name: 'Howard County Library', telNumber: '4103137700', caption: '', textColor: 'black', display: false, privateAudio: 'hcLibrary', publicAudio: 'busy', },
 {name: 'Bain Center', telNumber: '4103137213', caption: '', textColor: 'black', display: false, privateAudio: 'bain', publicAudio: 'busy', },
 {name: 'CAP1 main', telNumber: '18773834802', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
