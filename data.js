@@ -108,7 +108,7 @@ var contacts =[
 {name: 'Dolly Cell. 10th August', telNumber: '7742531295', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Domonic Barnes And Noble', telNumber: '3018091552', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Dr Ochaney Mahesh April 16', telNumber: '4107684700', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'East Columbia', telNumber: '4103137680', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
+{name: 'East Columbia 50', telNumber: '4103137680', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Floyds Barbershop', telNumber: '4435398720', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Geeta Didi. Anand Shahib', telNumber: '4105319579', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Geeta Didi. Anand Shahib', telNumber: '4438121630', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
