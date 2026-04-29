@@ -2,7 +2,7 @@
 // when set to private  - privateAudio plays if assigned.  allows outgoing calls to contacts without privateAudio. unsaved numbers play standard audio.
 // when set to public - publicAudio plays if assigned. all other outgoing calls are allowed.
 ////////////////////////////////////////
-var environmentStatus = "private";
+var environmentStatus = "public";
 
 var contacts =[
 
@@ -11,7 +11,7 @@ var contacts =[
 ////////////////////////////////////////
 /*7177448226 IN ICLOUD*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: 'busy', },
-{name: 'PT', telNumber: '4109885171', caption: '', textColor: 'black', display: false, privateAudio: 'busy', publicAudio: 'busy', },
+//{name: 'PT', telNumber: '4109885171', caption: '', textColor: 'black', display: false, privateAudio: 'busy', publicAudio: 'busy', },
 //{name: 'Aastha Day Care', telNumber: '2408133446', caption: '', textColor: 'black', display: false, privateAudio: '', publicAudio: '', },
 
 
@@ -26,7 +26,7 @@ var contacts =[
 {name: 'Voicemail Box', telNumber: '3018062639', caption: '', textColor: 'black', display: false, privateAudio: 'vmBox', publicAudio: 'vmBox', },
 {name: 'USPS oak hall', telNumber: '4103814373', caption: '', textColor: 'black', display: false, privateAudio: 'usps', publicAudio: 'busy', },
 {name: 'Library east columbia', telNumber: '4103137700', caption: '', textColor: 'black', display: false, privateAudio: 'hcLibrary', publicAudio: 'busy', },
-{name: 'Bain Center', telNumber: '4103137213', caption: '', textColor: 'black', display: false, privateAudio: 'bain', publicAudio: 'busy', },
+//{name: 'Bain Center', telNumber: '4103137213', caption: '', textColor: 'black', display: false, privateAudio: 'bain', publicAudio: 'busy', },
 {name: 'CAP1 main', telNumber: '18773834802', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
 {name: 'CAP1 clarskville', telNumber: '4105311788', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
 {name: 'CAP1 elkridge', telNumber: '4108722770', caption: '', textColor: 'black', display: false, privateAudio: 'cap1', publicAudio: 'busy', },
