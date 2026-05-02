@@ -2,7 +2,7 @@
 // when set to private  - privateAudio plays if assigned.  allows outgoing calls to contacts without privateAudio. unsaved numbers play standard audio.
 // when set to public - publicAudio plays if assigned. all other outgoing calls are allowed.
 ////////////////////////////////////////
-var environmentStatus = "private";
+var environmentStatus = "public";
 
 var contacts =[
 
@@ -10,7 +10,7 @@ var contacts =[
 // TEMP CONTACTS (ADD/REMOVE FROM ICLOUD AND GSHEET WHEN FINALIZING)
 ////////////////////////////////////////
 /*7177448226 IN ICLOUD*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
-{name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: 'busy', },
+//{name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: 'busy', },
 {name: 'PT', telNumber: '4109885171', caption: '', textColor: 'black', display: false, privateAudio: 'busy', publicAudio: 'busy', },
 {name: 'Aastha Day Care', telNumber: '2408133446', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 
