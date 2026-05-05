@@ -13,6 +13,7 @@ var contacts =[
 {name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: 'busy', },
 {name: 'PT', telNumber: '4109885171', caption: '', textColor: 'black', display: false, privateAudio: 'busy', publicAudio: 'busy', },
 {name: 'Aastha Day Care', telNumber: '2408133446', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Desh Duseja', telNumber: '2408133446', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'Hindu Temple 1', telNumber: '3014452165', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Hindu Temple 2', telNumber: '3014341000', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 
