@@ -10,13 +10,8 @@ var contacts =[
 // TEMP CONTACTS (ADD/REMOVE FROM ICLOUD AND GSHEET WHEN FINALIZING)
 ////////////////////////////////////////
 /*7177448226 IN ICLOUD*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
-{name: 'Nirmal Singh', telNumber: '3013269470', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: 'busy', },
-{name: 'PT', telNumber: '4109885171', caption: '', textColor: 'black', display: false, privateAudio: 'busy', publicAudio: 'busy', },
-{name: 'Aastha Day Care', telNumber: '2408133446', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 /*IN ICLOUD*/{name: 'Desh Duseja', telNumber: '6159459513', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'Hindu Temple 1', telNumber: '3014452165', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'Hindu Temple 2', telNumber: '3014341000', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 
 ////////////////////////////////////////
 // 911 (NOT DISPLAYED)
@@ -118,6 +113,8 @@ var contacts =[
 {name: 'Geeta Didi. Anand Shahib', telNumber: '4105319579', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Geeta Didi. Anand Shahib', telNumber: '4438121630', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Gurdawra Silver Spring', telNumber: '3013842133', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
+{name: 'Hindu Temple 1', telNumber: '3014452165', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
+{name: 'Hindu Temple 2', telNumber: '3014341000', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Imtiaz Chowdhry', telNumber: '4109643611', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Jayesh', telNumber: '3092531405', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Madhu John Hopkins', telNumber: '4105507871', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
