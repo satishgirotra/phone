@@ -2,7 +2,7 @@
 // when set to private  - privateAudio plays if assigned.  allows outgoing calls to contacts without privateAudio. unsaved numbers play standard audio.
 // when set to public - publicAudio plays if assigned. all other outgoing calls are allowed.
 ////////////////////////////////////////
-var environmentStatus = "public";
+var environmentStatus = "private";
 
 var contacts =[
 
