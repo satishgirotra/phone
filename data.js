@@ -169,6 +169,7 @@ var calls = [
 ////////////////////////////////////////
 // CALLS (if checkDecoyRules is false, call will go through. if true, checks rules for communication in contacts before connecting)
 ////////////////////////////////////////
+{name: 'Satish Kumar', telNumber: '8326930948', caption: 'Few days ago', textColor: 'red', voicemail: '', checkDecoyRules: false, },
 {name: 'Dolly Cell. 10th August', telNumber: '7742531295', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Nandit Gandhi Jan 24rth', telNumber: '5084097856', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Geeta Didi. Anand Shahib', telNumber: '4438121630', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
