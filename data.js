@@ -10,7 +10,12 @@ var contacts =[
 // TEMP CONTACTS (ADD/REMOVE FROM ICLOUD AND GSHEET WHEN FINALIZING)
 ////////////////////////////////////////
 /*7177448226 IN ICLOUD FOR TEXTING*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: '', },
-{name: 'Mark Valavanis (Bridge Instructor)', telNumber: '4438785710', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: '', },
+{name: 'Nepal Embassy', telNumber: '2026674550', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Nepal Embassy', telNumber: '2027744780', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Nepal Embassy', telNumber: '2024806858', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Nepal Embassy', telNumber: '2024806219', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Nepal Embassy', telNumber: '2027744608', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Nepal Embassy', telNumber: '2027747724', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: '', },
 /*IN ICLOUD*/{name: 'Desh Duseja', telNumber: '6159459513', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 
