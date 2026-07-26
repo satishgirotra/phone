@@ -157,7 +157,6 @@ var contacts =[
 {name: 'Sushma Dr Pinki Sister', telNumber: '2023297774', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'T T Maha Abdin', telNumber: '4432552675', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'UPS Billing', telNumber: '9739444482', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'Urgent Care Columbia', telNumber: '4102909990', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Vaibhav', telNumber: '7323518588', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Vaibhav Dad', telNumber: '7325700861', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Wendys Rt 108', telNumber: '4435455464', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
