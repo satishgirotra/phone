@@ -17,7 +17,7 @@ var contacts =[
 {name: 'Nepal Embassy', telNumber: '2027744608', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'Nepal Embassy', telNumber: '2027747724', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'BAM', telNumber: '4109975046', caption: '', textColor: 'black', display: false, privateAudio: 'bam', publicAudio: '', },
-/*IN ICLOUD*/{name: 'Desh Duseja', telNumber: '6159459513', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
+/*IN ICLOUD*/{name: 'Mark Valavanis', telNumber: '4438785710', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 
 ////////////////////////////////////////
 // 911 (NOT DISPLAYED)
