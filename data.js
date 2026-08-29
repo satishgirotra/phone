@@ -128,7 +128,7 @@ var contacts =[
 {name: 'Meals On Wheel', telNumber: '4435730942', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Meena Sharma', telNumber: '2408995482', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'MOVICO', telNumber: '4437558990', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'Nandit Gandhi Jan 24rth', telNumber: '5084097856', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Nandit Gandhi Jan 24rth', telNumber: '5084097856', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Patient First Columbia', telNumber: '4437184067', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Patient First. Corporate Office', telNumber: '8049685700', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Pichanga', telNumber: '4104614266', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
