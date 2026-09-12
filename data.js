@@ -11,7 +11,7 @@ var contacts =[
 ////////////////////////////////////////
 /*7177448226 IN ICLOUD FOR TEXTING*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: '', },
 /*IN ICLOUD*/{name: 'Mark Valavanis', telNumber: '4438785710', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'MTB ACTIVATE', telNumber: '18007244411', caption: '', textColor: 'black', display: false, privateAudio: '', publicAudio: '', },
+/*IN ICLOUD*/{name: 'MTB ACTIVATE', telNumber: '18007244411', caption: '', textColor: 'black', display: false, privateAudio: '', publicAudio: '', },
 
 ////////////////////////////////////////
 // 911 (NOT DISPLAYED)
