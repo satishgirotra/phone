@@ -2,7 +2,7 @@
 // when set to private  - privateAudio plays if assigned.  allows outgoing calls to contacts without privateAudio. unsaved numbers play standard audio.
 // when set to public - publicAudio plays if assigned. all other outgoing calls are allowed.
 /////////////////////////////////////////
-var environmentStatus = "private";
+var environmentStatus = "public";
 
 var contacts =[
 
@@ -38,6 +38,7 @@ var contacts =[
 {name: 'PNC long gate', telNumber: '4104658979', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
 {name: 'PNC rogers ave', telNumber: '4107503800', caption: '', textColor: 'black', display: false, privateAudio: 'pnc', publicAudio: 'busy', },
 {name: 'MTB main', telNumber: '18007242440', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
+{name: 'MTB card activation', telNumber: '18007244411', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
 {name: 'MTB banking', telNumber: '18007909130', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
 {name: 'MTB columbia mall', telNumber: '4107401449', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
 {name: 'MTB kings contrivance', telNumber: '4107401513', caption: '', textColor: 'black', display: false, privateAudio: 'mtb', publicAudio: 'busy', },
