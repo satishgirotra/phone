@@ -9,7 +9,6 @@ var contacts =[
 ////////////////////////////////////////
 // TEMP CONTACTS (ADD/REMOVE FROM ICLOUD AND GSHEET WHEN FINALIZING)
 ////////////////////////////////////////
-/*7177448226 IN ICLOUD FOR TEXTING*/{name: 'Prakash Poudel', telNumber: '4435652738', caption: '', textColor: 'black', display: false, privateAudio: 'domesticVM', publicAudio: '', },
 /*IN ICLOUD*/{name: 'Mark Valavanis', telNumber: '4438785710', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 
 ////////////////////////////////////////
@@ -152,11 +151,11 @@ var contacts =[
 {name: 'Sundesh Father Mohan', telNumber: '4108120314', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Suni Jani', telNumber: '4107074135', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Sunil Dr Dolly 30 Sept', telNumber: '5086156739', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'Suraj Dad', telNumber: '2403372022', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'domesticVM', },
-{name: 'Suraj Mom Pinki', telNumber: '4109601435', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'domesticVM', },
+{name: 'Suraj Dad', telNumber: '2403372022', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Suraj Mom Pinki', telNumber: '4109601435', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'busy', },
 {name: 'SURAJ SHIVAAN FRIEND', telNumber: '4109352786', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Surgen Office Mathew', telNumber: '4104486400', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-/*current # in datajs & icloud is 4107098797. real# 2023297774*/{name: 'Sushma Dr Pinki Sister', telNumber: '4107098797', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
+/*current # in datajs & icloud is 7177448226. real# 2023297774*/{name: 'Sushma Dr Pinki Sister', telNumber: '7177448226', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'T T Maha Abdin', telNumber: '4432552675', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'UPS Billing', telNumber: '9739444482', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Vaibhav', telNumber: '7323518588', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
