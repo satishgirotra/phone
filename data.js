@@ -183,9 +183,9 @@ var calls = [
 {name: 'Shivaan', telNumber: '3018064071', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Jayesh', telNumber: '3092531405', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Nandit Gandhi Jan 24rth', telNumber: '5084097856', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
-{name: 'Suraj Dad', telNumber: '2403372022', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
-{name: 'Suraj Dad', telNumber: '2403372022', caption: 'Few days ago', textColor: 'red', voicemail: '', checkDecoyRules: false, },
-{name: 'Suraj Dad', telNumber: '2403372022', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
+//{name: 'Suraj Dad', telNumber: '2403372022', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
+//{name: 'Suraj Dad', telNumber: '2403372022', caption: 'Few days ago', textColor: 'red', voicemail: '', checkDecoyRules: false, },
+//{name: 'Suraj Dad', telNumber: '2403372022', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Rajiv Rehani', telNumber: '3017288056', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Vaibhav', telNumber: '7323518588', caption: 'Few days ago', textColor: 'red', voicemail: '', checkDecoyRules: false, },
 {name: 'Vaibhav Dad', telNumber: '7325700861', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
@@ -213,7 +213,7 @@ var calls = [
 {name: 'Gurdawra Silver Spring', telNumber: '3013842133', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Dolly Cell. 10th August', telNumber: '7742531295', caption: '', textColor: 'red', voicemail: '', checkDecoyRules: false, },
 {name: 'Dolly Cell. 10th August', telNumber: '7742531295', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
-{name: 'Suraj Dad', telNumber: '2403372022', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
+//{name: 'Suraj Dad', telNumber: '2403372022', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Rajiv Rehani', telNumber: '3017288056', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 
 ]
