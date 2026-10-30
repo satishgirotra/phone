@@ -142,8 +142,8 @@ var contacts =[
 {name: 'Rema Gandhi', telNumber: '5088781498', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Risab. Shivaan Friend', telNumber: '7347316107', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Rishab Mom', telNumber: '7346528142', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-{name: 'Satish Kumar', telNumber: '2812076449', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'busy', },
-{name: 'Satish Kumar', telNumber: '8326930948', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Satish Kumar', telNumber: '2812076449', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
+{name: 'Satish Kumar', telNumber: '8326930948', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Shilpa', telNumber: '2407235725', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Shivaan', telNumber: '3018064071', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Shyam Suni Husband', telNumber: '4438785431', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
@@ -174,7 +174,6 @@ var calls = [
 ////////////////////////////////////////
 // CALLS (if checkDecoyRules is false, call will go through. if true, checks rules for communication in contacts before connecting)
 ////////////////////////////////////////
-//{name: 'Satish Kumar', telNumber: '8326930948', caption: 'Few days ago', textColor: 'red', voicemail: '', checkDecoyRules: false, },
 {name: 'Dolly Cell. 10th August', telNumber: '7742531295', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Geeta Didi. Anand Shahib', telNumber: '4438121630', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Shivaan', telNumber: '3018064071', caption: 'Few days ago', textColor: 'black', voicemail: '', checkDecoyRules: false, },
@@ -212,6 +211,7 @@ var calls = [
 {name: 'Gurdawra Silver Spring', telNumber: '3013842133', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 {name: 'Dolly Cell. 10th August', telNumber: '7742531295', caption: '', textColor: 'red', voicemail: '', checkDecoyRules: false, },
 {name: 'Dolly Cell. 10th August', telNumber: '7742531295', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
+{name: 'Satish Kumar', telNumber: '8326930948', caption: 'Few days ago', textColor: 'red', voicemail: '', checkDecoyRules: false, },
 //{name: 'Suraj Dad', telNumber: '2403372022', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 //{name: 'Rajiv Rehani', telNumber: '3017288056', caption: '', textColor: 'black', voicemail: '', checkDecoyRules: false, },
 
