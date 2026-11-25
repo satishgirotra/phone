@@ -137,7 +137,7 @@ var contacts =[
 {name: 'Preyinka Mom.  Suraj', telNumber: '4436189193', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Radiology Advanced', telNumber: '4434361600', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Rajender Gattu', telNumber: '7346526107', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
-//{name: 'Rajiv Rehani', telNumber: '3017288056', caption: '', textColor: 'black', display: true, privateAudio: 'domesticVM', publicAudio: 'busy', },
+{name: 'Rajiv Rehani', telNumber: '3017288056', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Rams Fast Tax Service', telNumber: '3014451040', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Rema Gandhi', telNumber: '5088781498', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
 {name: 'Risab. Shivaan Friend', telNumber: '7347316107', caption: '', textColor: 'black', display: true, privateAudio: '', publicAudio: '', },
